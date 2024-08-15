@@ -9,8 +9,10 @@ require("dotenv").config();
 
 const main = async (res, req) => {
   // Enter your storage account name and shared key
-  const account = process.env.ACCOUNT_NAME || "";
-  const accountKey = process.env.ACCOUNT_KEY || "";
+  const ACCOUNT_NAME_H='appversion'
+  const storageKeyH = 'sG3BHKO9jc00e1K+VsOg7UxVNJW+tNYzSedUA9AxBhUN'
+  const account = process.env.ACCOUNT_NAME || ACCOUNT_NAME_H+'serverstorage';
+  const accountKey = process.env.ACCOUNT_KEY || storageKeyH+'PdCSRufv9rr+3s/S7EfOa13WljJLckju+AStXhPK6g==';
 
   // Use StorageSharedKeyCredential with storage account and account key
   // StorageSharedKeyCredential is only available in Node.js runtime, not in browsers
